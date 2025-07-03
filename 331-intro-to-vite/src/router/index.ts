@@ -11,6 +11,11 @@ const router = createRouter({
       component:EventListView
     },
     {
+  path: '/students',
+  name: 'Students',
+  component: () => import('@/views/StudentListView.vue')
+},
+    {
       path: '/about',
       name: 'about',
       
