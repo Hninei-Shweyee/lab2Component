@@ -10,7 +10,7 @@ onMounted(() => {
   axios
     .get('https://my-json-server.typicode.com/Hninei-Shweyee/mock-events/events')
     .then((response) => {
-      console.log(response.data)
+      events.value=response.data
     })
     .catch((error) => {
       console.error('There was an error!', error)
